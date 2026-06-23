@@ -356,8 +356,8 @@ body.no-webgl {
 
 .hero__role {
   font-family: var(--font-display);
-  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
-  font-weight: 500;
+  font-size: clamp(1.15rem, 2.8vw, 1.6rem);
+  font-weight: 700;
   color: var(--ink);
   margin-bottom: 1.4rem;
 }
@@ -922,6 +922,9 @@ body.no-webgl {
   .work-grid {
     grid-template-columns: 1fr;
   }
+  .hero__pitch {
+    font-size: 0.97rem;
+  }
   /* Don't reserve a full screen per section on mobile — short cards floating
      in a centered 100vh void leave big distracting gaps between sections.
      Size to content with tight, even spacing instead. */
@@ -934,6 +937,9 @@ body.no-webgl {
 @media (max-width: 480px) {
   .nav__cta {
     display: none;
+  }
+  .hero__title {
+    font-size: clamp(2.8rem, 11vw, 4rem);
   }
   .hero__role::before {
     display: none;
